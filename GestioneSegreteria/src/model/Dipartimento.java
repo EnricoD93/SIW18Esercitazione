@@ -1,0 +1,29 @@
+package model;
+
+public class Dipartimento {
+	private Long codice;
+	private String nome;
+
+	public Dipartimento() {
+	}
+
+	public Dipartimento(String nome) {
+		this.nome = nome;
+	}
+
+	public Long getCodice() {
+		return codice;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setCodice(Long codice) {
+		this.codice = codice;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+}
