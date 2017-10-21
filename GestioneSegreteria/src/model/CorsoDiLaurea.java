@@ -6,8 +6,8 @@ import java.util.Set;
 public class CorsoDiLaurea {
 	private Long codice;
 	private String nome;
-	private Set<Corso> corsi;
 	private Dipartimento dipartimento;
+	private Set<Corso> corsi;
 
 	public Dipartimento getDipartimento() {
 		return dipartimento;
