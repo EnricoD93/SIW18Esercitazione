@@ -8,50 +8,55 @@ public class CorsoDiLaurea {
 	private String nome;
 	private Dipartimento dipartimento;
 	private Set<Corso> corsi;
-
-	public Dipartimento getDipartimento() {
-		return dipartimento;
-	}
-
-	public void setDipartimento(Dipartimento dipartimento) {
-		this.dipartimento = dipartimento;
-	}
-
+	
 	public CorsoDiLaurea() {
 	}
-
+	
 	public CorsoDiLaurea(String nome) {
 		this.nome = nome;
 	}
-
+	
 	public Long getCodice() {
 		return codice;
 	}
-
-	public void addCorso(Corso c) {
-		if (corsi == null) {
-			corsi = new HashSet<Corso>();
-		}
-		corsi.add(c);
+	public void setCodice(Long codice) {
+		this.codice = codice;
 	}
-
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public Dipartimento getDipartimento() {
+		return dipartimento;
+	}
+	public void setDipartimento(Dipartimento dipartimento) {
+		this.dipartimento = dipartimento;
+	}
 	public Set<Corso> getCorsi() {
 		return corsi;
 	}
-
 	public void setCorsi(Set<Corso> corsi) {
 		this.corsi = corsi;
 	}
 
-	public String getNome() {
-		return nome;
+	public void addCorso(Corso corso) {
+		if (corsi == null){
+			corsi = new HashSet<Corso>();
+		}
+		corsi.add(corso);
 	}
-
-	public void setCodice(Long codice) {
-		this.codice = codice;
+	
+	public String toString() {
+		StringBuffer str = new StringBuffer("CorsoDiLaurea[");
+		str.append(this.getCodice() + ", " + this.getNome());
+		str.append(", {");
+		for (Corso c : this.getCorsi()) {
+			str.append(c.toString());
+		}
+		str.append("}\n");
+		return str.toString();
 	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+	
 }
