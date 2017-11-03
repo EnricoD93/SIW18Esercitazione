@@ -1,0 +1,66 @@
+@charset "ISO-8859-1";
+
+BODY p {
+	font-family: Comics Sans MS;
+}
+
+BODY {
+	background-image:
+		url("http://www.hitthefloor.com/wp-content/uploads/2014/10/Grey-Texture.jpg");
+}
+
+ANNO {
+	font-weight: 700;
+}
+
+H1>a>img {
+	padding-left: 100px;
+	width: 600px;
+	height: 140px;
+}
+
+H1>p>img {
+	padding-left: 300px;
+	width: 180px;
+	height: 160px;
+}
+
+H2 {
+	padding-right: 450px;
+	text-align: center;
+	font-size: 100%
+}
+
+H2>font {
+	font-size: 180%;
+}
+
+SECTION {
+	font-size: 180%;
+	color: fireBrick;
+	font-weight: 700;
+}
+
+SOSTENUTO {
+	font-weight: 700;
+}
+
+DIV>UL>P {
+	text-decoration: underline;
+	font-style: italic;
+	font-weight: 700;
+}
+
+DIV, SECTION { //
+	padding-left: 450px;
+}
+
+#id0 {
+	width: 20px;
+	height: 15px;
+}
+
+#id1 {
+	width: 18px;
+	height: 13px;
+}
