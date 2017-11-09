@@ -14,20 +14,21 @@ ANNO {
 }
 
 H1>a>img {
-	padding-left: 100px;
+	padding-left: 350px;
 	width: 600px;
 	height: 140px;
 }
 
 H1>p>img {
-	padding-left: 300px;
+	padding-left: 100px;
 	width: 180px;
 	height: 160px;
 }
 
 H2 {
-	padding-right: 450px;
-	text-align: center;
+//	padding-right: 450px;
+	padding-left: 300px;
+	text-align: left;
 	font-size: 100%
 }
 
@@ -51,7 +52,11 @@ DIV>UL>P {
 	font-weight: 700;
 }
 
-DIV, SECTION { //
+ SECTION { 
+	padding-left: 550px;
+}
+ DIV { 
+ 	inline-block;
 	padding-left: 450px;
 }
 
