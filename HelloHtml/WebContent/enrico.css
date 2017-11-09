@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+BODY {
+	color: black;
+	font-family: fantasy;
+	font-style: normal;
+}
+
+p {
+	color: blue;
+	font: caption;
+}
+
+no {
+	color: red;
+	font: cursive;
+}
+
+H2 {
+	font-family: monospace;
+	font-size: medium;
+}
+
+CARRIERA {
+	font-size: x-large;
+}
+
+name {
+	font-size: x-large;
+}
+
+ul>li {
+	list-style: outside;
+}
