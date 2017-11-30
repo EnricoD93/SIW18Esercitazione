@@ -16,6 +16,13 @@
 <header>
 <h1>Iscrivi un nuovo Studente</h1>
 <h2>Compila i seguente form per registrare un nuovo studente</h2>
+
+<script language="javascript">
+	function messaggioPulisci(){
+		alert("I dati verranno ora puliti");
+	}
+</script>
+
 </header>
 
 <section class="moduloRegistrazione" class="row">
@@ -40,7 +47,7 @@
 		</div>		
 		<div class="form-group">
 			<input name="validaDati" type="button" value="Valida Dati" class="btn btn-warning"/>
-			<input name="resetDati" type="reset" value="Reset Dati"  class="btn btn-danger"/>
+			<input name="resetDati" type="reset" value="Reset Dati"  class="btn btn-danger" onclick="messaggioPulisci();"/>
 			<input name="inviaDati" type="submit" value="Invia Dati"  class="btn btn-success"/>
 		</div>		
 	</form>
